@@ -8,11 +8,11 @@ How it works automatically:
 """
 
 # ── Brand Settings (only thing you change) ────────────────────────────────────
-BRAND_NAME   = "Nuuly"
-KEYWORDS     = ["Nuuly clothing rental", "Nuuly subscription"]
+BRAND_NAME   = "Kiss Beauty Group"
+KEYWORDS     = ["Kiss nails", "Kiss lashes", "Kiss beauty", "Kiss impress"]
 
 # ── App Store (leave blank if no app - auto-detects Amazon+Reddit instead) ────
-APP_STORE_ID = "1511548818"
+APP_STORE_ID = ""
 APP_COUNTRY  = "us"
 
 # ── Amazon ASINs (auto-used if APP_STORE_ID is blank) ─────────────────────────
@@ -26,9 +26,9 @@ REDDIT_SUBREDDITS = [
 ]
 
 # ── Platform Branding ─────────────────────────────────────────────────────────
-PLATFORM_TITLE    = "Retail Intelligence Platform"
+PLATFORM_TITLE    = "Kiss Beauty Intelligence Platform"
 PLATFORM_SUBTITLE = "Customer Insights & Operations"
-PLATFORM_ICON     = "🏪"
+PLATFORM_ICON     = "💅"
 
 # ── AI Model ─────────────────────────────────────────────────────────────────
 GROQ_MODEL = "llama-3.3-70b-versatile"
