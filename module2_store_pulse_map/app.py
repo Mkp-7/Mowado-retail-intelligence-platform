@@ -69,9 +69,12 @@ def build_location_stats(df):
         return "On Par"
 
     agg["status"] = agg["vs_peer"].apply(status)
-    agg["label"]  = (agg["place_name"] + "<br>" +
-                     agg["address"].fillna("") + "<br>" +
-                     agg["city"].fillna("") + ", " + agg["state"].fillna(""))
+    agg["label"] = (
+        agg["place_name"].astype(str) + "<br>" +
+        agg["address"].fillna("").astype(str) + "<br>" +
+        agg["city"].fillna("").astype(str) + ", " +
+        agg["state"].fillna("").astype(str)
+    )
 
     return agg
 
