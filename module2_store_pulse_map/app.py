@@ -58,7 +58,7 @@ def build_location_stats(df):
     if "state" in agg.columns and agg["state"].notna().any():
         agg["peer_avg"] = agg.groupby("state")["avg_rating"].transform("mean").round(2)
     else:
-        agg["peer_avg"] = agg["avg_rating"].mean().round(2)
+        agg["peer_avg"] = round(float(agg["avg_rating"].mean()), 2)
 
     agg["vs_peer"] = (agg["avg_rating"] - agg["peer_avg"]).round(2)
 
